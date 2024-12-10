@@ -1,84 +1,86 @@
 # Push Express 🚀🔔
 
-**Push Express** is a tool that simplifies the integration of push notification components in web projects. It allows you to quickly add notification components and services using TypeScript or JavaScript, with support for Yarn and NPM.
+**Push Express** es una herramienta que simplifica la integración de componentes de los productos de Push Protocol en proyectos web. Aunque el desarrollo comenzó con la implementación de servicios de notificaciones push, actualmente soporta una amplia gama de funcionalidades de Push Protocol. Permite agregar componentes y servicios utilizando TypeScript o JavaScript, con soporte para Yarn y NPM.
 
-## Features
+## Características
 
-- Adds push notification components with a single command.
-- Supports both TypeScript and JavaScript.
-- Automatically installs dependencies using Yarn, NPM, or manually.
-- Easy integration with [Push Protocol](https://push.org/) to manage Web3 notifications.
+- Agrega componentes de todos los productos de Push Protocol con un solo comando.
+- Compatible con TypeScript y JavaScript.
+- Instala automáticamente las dependencias usando Yarn, NPM o manualmente.
+- Integración sencilla con [Push Protocol](https://push.org/) para gestionar notificaciones Web3, chats, y más.
 
-## Installation (Optional)
+## Instalación (Opcional)
 
-To install **Push Express**, follow these steps:
+Para instalar **Push Express**, sigue estos pasos:
 
-### Install using npm
+### Instalar con npm
 
 ```bash
 npm install -g push-express
 ```
 
-### Install using Yarn
+### Instalar con Yarn
 
 ```bash
 yarn global add push-express
 ```
 
-## Usage
+## Uso
 
-Once installed, you can use **Push Express** in your project to add push notification components.
+Una vez instalado, puedes usar **Push Express** en tu proyecto para agregar componentes de los productos de Push Protocol.
 
-### 1. Add a notification component
+### 1. Agregar un componente
 
-Run the following command to add a notification component:
-
-```bash
-npx push-express add notification
-```
-
-or
+Ejecuta el siguiente comando para agregar un componente:
 
 ```bash
-push-express add notification
+npx push-express add [componente]
 ```
 
-### 2. Select the file type
+o
 
-After running the previous command, select the file type for your project:
+```bash
+push-express add [componente]
+```
 
-- **TypeScript** (default)
+> **Nota:** Reemplaza `[componente]` con el producto específico de Push Protocol que deseas integrar (por ejemplo, `notification`, `chat`, etc.).
+
+### 2. Selecciona el tipo de archivo
+
+Después de ejecutar el comando anterior, selecciona el tipo de archivo para tu proyecto:
+
+- **TypeScript** (predeterminado)
 - **JavaScript**
 
-### 3. Install dependencies
+### 3. Instala las dependencias
 
-After adding the notification component, **Push Express** will ask how you want to install dependencies:
+Después de agregar el componente, **Push Express** te pedirá que elijas cómo instalar las dependencias:
 
-- **Yarn**: Automatically installs dependencies using Yarn.
-- **NPM**: Automatically installs dependencies using NPM.
-- **Manual**: It will show you the command to install them manually.
+- **Yarn**: Instala automáticamente las dependencias usando Yarn.
+- **NPM**: Instala automáticamente las dependencias usando NPM.
+- **Manual**: Mostrará el comando para instalarlas manualmente.
 
 ```bash
 npm install @pushprotocol/restapi@latest ethers@^5.7
 ```
 
-### 4. Start your project
+### 4. Inicia tu proyecto
 
-Once the component has been added and the dependencies are installed, you can start your project:
+Una vez agregado el componente e instaladas las dependencias, puedes iniciar tu proyecto:
 
 ```bash
 npm run dev
 ```
 
-or
+o
 
 ```bash
 yarn dev
 ```
 
-## Example
+## Ejemplo
 
-Here’s an example of what your project structure might look like after adding the component:
+Aquí tienes un ejemplo de cómo podría lucir la estructura de tu proyecto después de agregar un componente:
 
 ```bash
 src/
@@ -92,19 +94,19 @@ src/
         └── push-notification.service.ts
 ```
 
-## Contributions
+## Contribuciones
 
-Contributions are welcome! If you want to contribute to **Push Express**, follow these steps:
+¡Las contribuciones son bienvenidas! Si deseas contribuir a **Push Express**, sigue estos pasos:
 
-1. Fork the project [https://github.com/wolfcito/push-express](https://github.com/wolfcito/push-express).
-2. Create a branch for your feature (`git checkout -b feature/new-feature`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature/new-feature`).
-5. Open a pull request.
+1. Haz un fork del proyecto [https://github.com/wolfcito/push-express](https://github.com/wolfcito/push-express).
+2. Crea una rama para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`).
+3. Haz commit de tus cambios (`git commit -m 'Agregar nueva funcionalidad'`).
+4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Abre un pull request.
 
-> ⚠️ Warning:
-> The code within this repository is provided without any warranties. It is important to note that the code has not been audited for potential security vulnerabilities. Using this code could potentially lead to loss of funds, compromised data, or asset risk. Exercise caution and use this code at your own risk. Please refer to the LICENSE file for details about the terms and conditions.
+> ⚠️ **Advertencia**:  
+> El código en este repositorio se proporciona sin garantías. Es importante señalar que el código no ha sido auditado para detectar posibles vulnerabilidades de seguridad. Usar este código podría generar pérdida de fondos, datos comprometidos o riesgos para los activos. Procede con precaución y utiliza este código bajo tu propio riesgo. Consulta el archivo LICENSE para más detalles sobre los términos y condiciones.
 
-## License
+## Licencia
 
-This project is licensed under the MIT license. For more information, check the [LICENSE](LICENSE) file.
+Este proyecto está bajo la licencia MIT. Para más información, consulta el archivo [LICENSE](LICENSE).
