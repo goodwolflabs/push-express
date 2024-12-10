@@ -1,86 +1,86 @@
 # Push Express 🚀🔔
 
-**Push Express** es una herramienta que simplifica la integración de componentes de los productos de Push Protocol en proyectos web. Aunque el desarrollo comenzó con la implementación de servicios de notificaciones push, actualmente soporta una amplia gama de funcionalidades de Push Protocol. Permite agregar componentes y servicios utilizando TypeScript o JavaScript, con soporte para Yarn y NPM.
+**Push Express** is a tool that simplifies the integration of Push Protocol product components into web projects. Although development began with the implementation of push notification services, it now supports a wide range of Push Protocol functionalities. It allows you to add components and services quickly using TypeScript or JavaScript, with support for Yarn and NPM.
 
-## Características
+## Features
 
-- Agrega componentes de todos los productos de Push Protocol con un solo comando.
-- Compatible con TypeScript y JavaScript.
-- Instala automáticamente las dependencias usando Yarn, NPM o manualmente.
-- Integración sencilla con [Push Protocol](https://push.org/) para gestionar notificaciones Web3, chats, y más.
+- Adds components for all Push Protocol products with a single command.
+- Supports both TypeScript and JavaScript.
+- Automatically installs dependencies using Yarn, NPM, or manually.
+- Simple integration with [Push Protocol](https://push.org/) to manage Web3 notifications, chats, and more.
 
-## Instalación (Opcional)
+## Installation (Optional)
 
-Para instalar **Push Express**, sigue estos pasos:
+To install **Push Express**, follow these steps:
 
-### Instalar con npm
+### Install with npm
 
 ```bash
 npm install -g push-express
 ```
 
-### Instalar con Yarn
+### Install with Yarn
 
 ```bash
 yarn global add push-express
 ```
 
-## Uso
+## Usage
 
-Una vez instalado, puedes usar **Push Express** en tu proyecto para agregar componentes de los productos de Push Protocol.
+Once installed, you can use **Push Express** in your project to add components for Push Protocol products.
 
-### 1. Agregar un componente
+### 1. Add a component
 
-Ejecuta el siguiente comando para agregar un componente:
-
-```bash
-npx push-express add [componente]
-```
-
-o
+Run the following command to add a component:
 
 ```bash
-push-express add [componente]
+npx push-express add [component]
 ```
 
-> **Nota:** Reemplaza `[componente]` con el producto específico de Push Protocol que deseas integrar (por ejemplo, `notification`, `chat`, etc.).
+or
 
-### 2. Selecciona el tipo de archivo
+```bash
+push-express add [component]
+```
 
-Después de ejecutar el comando anterior, selecciona el tipo de archivo para tu proyecto:
+> **Note:** Replace `[component]` with the specific Push Protocol product you want to integrate (e.g., `notification`, `chat`, etc.).
 
-- **TypeScript** (predeterminado)
+### 2. Select the file type
+
+After running the previous command, select the file type for your project:
+
+- **TypeScript** (default)
 - **JavaScript**
 
-### 3. Instala las dependencias
+### 3. Install dependencies
 
-Después de agregar el componente, **Push Express** te pedirá que elijas cómo instalar las dependencias:
+After adding the component, **Push Express** will ask how you want to install the dependencies:
 
-- **Yarn**: Instala automáticamente las dependencias usando Yarn.
-- **NPM**: Instala automáticamente las dependencias usando NPM.
-- **Manual**: Mostrará el comando para instalarlas manualmente.
+- **Yarn**: Automatically installs dependencies using Yarn.
+- **NPM**: Automatically installs dependencies using NPM.
+- **Manual**: It will display the command to install them manually.
 
 ```bash
 npm install @pushprotocol/restapi@latest ethers@^5.7
 ```
 
-### 4. Inicia tu proyecto
+### 4. Start your project
 
-Una vez agregado el componente e instaladas las dependencias, puedes iniciar tu proyecto:
+Once the component has been added and the dependencies are installed, you can start your project:
 
 ```bash
 npm run dev
 ```
 
-o
+or
 
 ```bash
 yarn dev
 ```
 
-## Ejemplo
+## Example
 
-Aquí tienes un ejemplo de cómo podría lucir la estructura de tu proyecto después de agregar un componente:
+Here’s an example of what your project structure might look like after adding a component:
 
 ```bash
 src/
@@ -94,19 +94,19 @@ src/
         └── push-notification.service.ts
 ```
 
-## Contribuciones
+## Contributions
 
-¡Las contribuciones son bienvenidas! Si deseas contribuir a **Push Express**, sigue estos pasos:
+Contributions are welcome! If you want to contribute to **Push Express**, follow these steps:
 
-1. Haz un fork del proyecto [https://github.com/wolfcito/push-express](https://github.com/wolfcito/push-express).
-2. Crea una rama para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`).
-3. Haz commit de tus cambios (`git commit -m 'Agregar nueva funcionalidad'`).
-4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
-5. Abre un pull request.
+1. Fork the project [https://github.com/wolfcito/push-express](https://github.com/wolfcito/push-express).
+2. Create a branch for your feature (`git checkout -b feature/new-feature`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/new-feature`).
+5. Open a pull request.
 
-> ⚠️ **Advertencia**:  
-> El código en este repositorio se proporciona sin garantías. Es importante señalar que el código no ha sido auditado para detectar posibles vulnerabilidades de seguridad. Usar este código podría generar pérdida de fondos, datos comprometidos o riesgos para los activos. Procede con precaución y utiliza este código bajo tu propio riesgo. Consulta el archivo LICENSE para más detalles sobre los términos y condiciones.
+> ⚠️ **Warning**:  
+> The code in this repository is provided without any warranties. It is important to note that the code has not been audited for potential security vulnerabilities. Using this code could result in fund loss, compromised data, or asset risks. Proceed with caution and use this code at your own risk. Please refer to the LICENSE file for more details on the terms and conditions.
 
-## Licencia
+## License
 
-Este proyecto está bajo la licencia MIT. Para más información, consulta el archivo [LICENSE](LICENSE).
+This project is licensed under the MIT license. For more information, check the [LICENSE](LICENSE) file.
